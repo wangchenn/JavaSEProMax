@@ -15,9 +15,14 @@ import java.io.IOException;
 //精确匹配 优先级相比其他更高
 //@WebServlet(urlPatterns = "/user/select")
 ///**目录匹配*/
-//@WebServlet(urlPatterns = "/user/*")
-/**扩展名匹配*/
-@WebServlet(urlPatterns = "/user/*.do")
+////@WebServlet(urlPatterns = "/user/*")
+///**扩展名匹配*/
+//@WebServlet(urlPatterns = "/user/*.do")
+
+/**
+ * 任意匹配
+ */
+@WebServlet(urlPatterns = "/user/*")
 public class ServletDemo8 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
