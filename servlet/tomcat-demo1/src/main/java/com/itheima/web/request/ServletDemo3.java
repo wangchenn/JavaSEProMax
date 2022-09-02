@@ -1,4 +1,4 @@
-package com.itheima.web;
+package com.itheima.web.request;
 
 import javax.servlet.Servlet;
 import javax.servlet.ServletConfig;
